@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Eric's Resume</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class="main-technologies">
+        <!-- HTML -->           
+        <div class="html">
+            <!-- Presentation -->
+            <div>
+                <table>
+                    <tr>
+                        <td><img src="./resources/profile.png" width="250" height="250" alt="profile.png"></td>
+                        <td></td>
+                        <td>
+                            <h1>Eric Urraco</h1>
+                            <p><strong>Programmer || Student </strong></p>
+                            <p>I'm <span id="age"></span> years old! Passionate, willing to learn, 
+                            comfortable with agile frameworks and working collaboratively or autonomously.</p>
+                        </td>
+                    </tr>
+                </table>  
+            <hr size="3px">
+            </div> 
+            <div class="professional">
+                <div class="work-experience-hobbies">
+                    <!-- Work Experience -->
+                    <div class="work-experience">
+                        <h3>Work Experience</h3>
+                        <table>
+                            <tr><td>Internship at <a href="http://ryt.hn/" target="_blank">Reytel</a></td></tr>
+                            <tr><td>Junior Programmer Analyst at Caracol Knits</td></tr>
+                            <tr><td><strong>I'm currently working as a Junior Programmer Analyst at <a href="https://tripleahn.com/" target="_blank">Triple A Autopartes</a></strong></td></tr>
+                        </table>
+                    </div>
+
+                    <!-- Hobbies and Languages-->
+                    <div class="hobbies-languages">
+                        <div class="hobbies">
+                            <h3>Hobbies</h3>
+                            <table>
+                                <tr><td>Watching movies</td></tr>
+                                <tr><td>Listening music</td></tr>
+                                <tr><td>Watching movies</td></tr>
+                                <tr><td>Play videogames</td></tr>
+                                <tr><td>Workout</td></tr>
+                            </table>
+                        </div>
+                        <div>
+                            <h3>Languages</h3>
+                            <table>
+                                <tr><td>Spanish</td><td class="stars">★★★★★</td></tr>
+                                <tr><td>English</td><td class="stars">★★★★☆</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional -->
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <table>
+                        <tr><td>HTML</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>CSS</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>SQL</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>MySQL</td><td class="stars">★★★☆☆</td></tr>
+                        <tr><td>C#</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>ReactJS</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>Javascript</td><td class="stars">★★★★☆</td></tr>
+                        <tr><td>VB.Net</td><td class="stars">★★★★☆</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    </body>
+    <script>
+        var age = getAge("1991/07/07")
+        document.getElementById('age').innerHTML = age;
+
+    function getAge(dateString) {
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+    </script>
+</html>

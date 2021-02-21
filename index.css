@@ -1,0 +1,32 @@
+.main-technologies
+{
+    height: 880px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+.html{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    height: 100%;
+}
+.professional{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column-gap: 10px;
+    font-size: larger;
+
+}
+
+.work-experience-hobbies{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.hobbies-languages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.stars{
+    color: darkgoldenrod;
+};
